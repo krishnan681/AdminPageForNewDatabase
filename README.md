@@ -1,3 +1,5 @@
+<h1><strong>AdminPageForNewDatabase</strong></h1>
+
 this  React application that uses
 Material UI, 
 Bootstrap, 
