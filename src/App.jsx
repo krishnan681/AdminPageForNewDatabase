@@ -7,9 +7,13 @@ import DashBoard from "./Components/DashBoard";
 import Datas from "./Components/Datas";
 import Subcription from "./Components/Subcription";
 import Team from "./Components/Team";
+import Profile from "./Components/Profile";
+import Auth from "./Components/Auth";
 
+import TotalCountNPCP from "./Components/TotalCountNPCP";
+ 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <Router>
@@ -30,6 +34,13 @@ function App() {
             <Nav.Item>
               <Nav.Link as={Link} to="/Team">Team</Nav.Link> {/* Use Link for navigation */}
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/Profile">Profile</Nav.Link> {/* Use Link for navigation */}
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/TotalCountNPCP">TotalCountNPCP</Nav.Link> {/* Use Link for navigation */}
+            </Nav.Item>
+            
           </Nav>
         </Container>
       </Navbar>
@@ -40,6 +51,8 @@ function App() {
         <Route path="/datas" element={<Datas />} />
         <Route path="/Subcription" element={<Subcription />} />
         <Route path="/Team" element={<Team />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/TotalCountNPCP" element={<TotalCountNPCP />} />
       </Routes>
     </Router>
   );

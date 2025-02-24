@@ -26,7 +26,7 @@ const DashBoard = () => {
   const [totalEntries, setTotalEntries] = useState([]); // New state for total entries
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [limit, setLimit] = useState(10000); // Default limit for calculating percentages
+  const [limit, setLimit] = useState(15000); // Default limit for calculating percentages
    
   // Fetch total records and unique IDs
   const fetchTotals = async () => {

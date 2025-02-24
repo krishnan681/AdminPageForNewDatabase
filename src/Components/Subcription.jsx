@@ -2,7 +2,7 @@ import React from 'react'
 
 const Subcription = () => {
   return (
-    <div>Subcription</div>
+    <div>total count of np and cwp</div>
   )
 }
 
